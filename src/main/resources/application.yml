@@ -1,0 +1,13 @@
+spring:
+  profiles: online
+  application:
+    name: eurekaUserService
+
+server:
+  port: 6001
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://slf.eureka.center1:9001/eureka/,http://slf.eureka.center2:9002/eureka/,http://slf.eureka.center3:9003/eureka/
+
